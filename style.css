@@ -1,0 +1,101 @@
+body{
+    background-color: #000;
+}
+.bulb-holder
+{
+    width: 50px;
+    height: 40px;
+    background-color: teal;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: translate(250px,120px);
+    z-index: 1;
+}
+.bulb{
+    width: 50px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 60px;
+    transform: translate(0px,30px);
+    animation: light 2s infinite cubic-bezier(1,-0.45,0,1.89);
+
+}
+@keyframes light{
+    10%{
+        box-shadow: 0 1px 10px yellow,
+        0 2px 20px yellow,
+        10px 20px 30px yellow,
+        -10px 20px 30px yellow,
+        30px 50px 50px yellow,
+        -30px 50px 50px yellow;
+    }
+    20%{
+        box-shadow: none;
+    }
+    30%{
+        box-shadow: 0 1px 10px lightcoral,
+        0 2px 20px lightcoral,
+        10px 20px 30px lightcoral,
+        -10px 20px 30px lightcoral,
+        30px 50px 50px lightcoral,
+        -30px 50px 50px lightcoral;
+        
+    }
+    40%{
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0 1px 10px aqua,
+        0 2px 20px aqua,
+        10px 20px 30px aqua,
+        -10px 20px 30px aqua,
+        30px 50px 50px aqua,
+        -30px 50px 50px aqua;
+    
+        
+    }
+    60%{
+        box-shadow: none;
+    }
+    70%{
+        box-shadow: 0 1px 10px purple,
+        0 2px 20px purple,
+        10px 20px 30px purple,
+        -10px 20px 30px purple,
+        30px 50px 50px purple,
+        -30px 50px 50px purple;
+    }
+    80%{
+        box-shadow: 0 1px 10px tomato,
+        0 2px 20px tomato,
+        10px 20px 30px tomato,
+        -10px 20px 30px tomato,
+        30px 50px 50px tomato,
+        -30px 50px 50px tomato;
+    }
+    90%{
+        box-shadow: 0 1px 10px yellow,
+        0 2px 20px yellow,
+        10px 20px 30px yellow,
+        -10px 20px 30px yellow,
+        30px 50px 50px yellow,
+        -30px 50px 50px yellow,
+        40px 60px 100px yellow,
+        -40px 60px 100px yellow,
+        70px 70px 100px yellow,
+        -70px 70px 100px yellow;
+    }
+    100%{
+        box-shadow: 0 1px 10px yellow,
+        0 2px 20px yellow,
+        10px 20px 30px yellow,
+        -10px 20px 30px yellow,
+        30px 50px 50px yellow,
+        -30px 50px 50px yellow,
+        40px 60px 100px yellow,
+        -40px 60px 100px yellow,
+        70px 70px 100px yellow,
+        -70px 70px 100px yellow;
+    }
+}
